@@ -1,3 +1,5 @@
+![img js](https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png)
+
 In this project I learned how to work with CLI commands and execute a non-web server Node.js JavaScript code.
 
 <br>
