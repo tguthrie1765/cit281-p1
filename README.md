@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+In this project I learned how to work with CLI commands and execute a non-web server Node.js JavaScript code.
 
-You can use the [editor on GitHub](https://github.com/tguthrie1765/cit281-p1/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+<br>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Here is the code from project 1
+```js
+/*
+ CIT 281 Project 1
+ Name: Thomas Guthrie
+*/
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+console.log(["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][new Date().getDay()])
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+```js
+/*
+ CIT 281 Project 1
+ Name: Thomas Guthrie
+*/
 
-### Jekyll Themes
+// Returns a random number between min (inclusive) and max (exclusive)
+function getRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tguthrie1765/cit281-p1/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+function getRandomString() {
+    let stringLength = getRandomInteger(5,25)
+    const randomLetters = 'abcdefghijklmnopqrstuvwxyz';
+    let result = '';
+    for ( let i = 0; i < stringLength; i++ ) {
+        result += randomLetters.charAt(getRandomInteger(0,25));
+    }
+    return result;
+}
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+console.log(String(getRandomString()));
+```
